@@ -1,0 +1,94 @@
+{
+  "rows_train": 1776653,
+  "rows_test": 966995,
+  "test_start": "2025-01-01",
+  "models": {
+    "Baseline: district median": {
+      "mae_gbp": 149785.7739,
+      "rmse_gbp": 306855.1107,
+      "mdape_pct": 30.6402,
+      "within_20pct": 34.3755,
+      "r2_log": 0.3289
+    },
+    "Global mean": {
+      "mae_gbp": 182017.3725,
+      "rmse_gbp": 350583.6462,
+      "mdape_pct": 39.5656,
+      "within_20pct": 25.9358,
+      "r2_log": -0.0015
+    },
+    "Ridge regression": {
+      "mae_gbp": 115756.3825,
+      "rmse_gbp": 265988.3589,
+      "mdape_pct": 21.896,
+      "within_20pct": 46.3744,
+      "r2_log": 0.5928
+    },
+    "Gradient boosting": {
+      "mae_gbp": 107642.9845,
+      "rmse_gbp": 252215.7816,
+      "mdape_pct": 19.8719,
+      "within_20pct": 50.2566,
+      "r2_log": 0.643
+    }
+  },
+  "error_by_region": {
+    "East of England": {
+      "mdape_pct": 17.83,
+      "sales": 101851
+    },
+    "South East": {
+      "mdape_pct": 18.17,
+      "sales": 160408
+    },
+    "East Midlands": {
+      "mdape_pct": 18.21,
+      "sales": 72383
+    },
+    "West Midlands": {
+      "mdape_pct": 19.25,
+      "sales": 90374
+    },
+    "South West": {
+      "mdape_pct": 19.86,
+      "sales": 104604
+    },
+    "London": {
+      "mdape_pct": 20.45,
+      "sales": 109716
+    },
+    "North West": {
+      "mdape_pct": 21.1,
+      "sales": 132524
+    },
+    "Wales": {
+      "mdape_pct": 21.19,
+      "sales": 45503
+    },
+    "Yorkshire and The Humber": {
+      "mdape_pct": 21.75,
+      "sales": 98392
+    },
+    "North East": {
+      "mdape_pct": 24.74,
+      "sales": 50921
+    },
+    "Unknown": {
+      "mdape_pct": 34.16,
+      "sales": 319
+    }
+  },
+  "importance": {
+    "property_type_label": 0.16123,
+    "old_new_label": 0.00461,
+    "duration_label": 0.05228,
+    "region": 0.00662,
+    "postcode_area": 0.00806,
+    "postcode_district": 0.22421,
+    "district": 0.02172,
+    "county": 0.01136,
+    "town_city": 0.01113,
+    "month_sin": 0.00036,
+    "month_cos": -0.0
+  }
+}
